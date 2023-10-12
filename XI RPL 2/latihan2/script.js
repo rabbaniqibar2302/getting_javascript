@@ -1,0 +1,1 @@
+document.write("Kode ini dari file external javascript");
