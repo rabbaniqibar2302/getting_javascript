@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Event 1</title>
+</head>
+<body>
+    <h1>Latihan Membuat Event</h1>
+    <h3>Event Klik</h3>
+    <!-- Event Klik -->
+    <!-- Termasuk dalam mouse event, Karena pemicunya adalah aktivitas dari klik mouse -->
+
+    <!-- Cara Pertama -->
+    <button onclick="tombol()"> Hello </button>
+
+    <!-- Cara Kedua -->
+    <button id="tombol" > Bu Eka </button>
+
+    <!-- Cara Ketiga (Double Click) -->
+    <button id="tombol-2"> Klik Aku 2 Kali! </button>
+
+    <script>
+        // Cara Pertama
+        function tombol(){
+            alert("Hallo Kamu");
+        }
+
+        // Cara Kedua
+        const button = document.getElementById("tombol");
+        button.addEventListener("click", function(){
+            alert("Hallo Bu Ekaaaa");
+        });
+
+        // Cara Ketiga
+        const button_2 = document.getElementById("tombol-2");
+        button_2.addEventListener("dblclick", function(){
+            alert("Aku ter-klik 2 kali !!");
+        });
+    </script>
+</body>
+</html>

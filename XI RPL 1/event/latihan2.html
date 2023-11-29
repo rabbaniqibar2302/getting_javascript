@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Membuat Event Hover</title>
+</head>
+<body>
+    <!-- Mouse Over -->
+    <button id="btn-over">Mouse Over</button>
+    
+    <!-- Mouse Enter -->
+    <button id="btn-enter">Mouse Enter</button>
+    
+    <!-- Mouse Out -->
+    <button id="btn-out">Mouse Out</button>
+
+    <script>
+        const btn_over = document.getElementById("btn-over");
+        const btn_enter = document.getElementById("btn-enter");
+        const btn_out = document.getElementById("btn-out");
+
+        btn_over.addEventListener("mouseover", function(event){
+            event.target.innerText = "Mousena dah over";
+        })
+        
+        btn_enter.addEventListener("mouseenter", function(event){
+            event.target.innerText = "Mousena dah dalem ndi";
+        })
+
+        btn_out.addEventListener("mouseout", function(event){
+            event.target.innerText = "Mousena dah Di Out";
+        })
+    </script>
+    
+</body>
+</html>

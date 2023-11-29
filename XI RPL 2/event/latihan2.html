@@ -1,0 +1,39 @@
+<html>
+<head>
+    <title>Latihan membuat event hover</title>
+</head>
+<body>
+    <h2>Membuat Event</h2>    
+    <h4>Menggunakan Hover!!!!</h4>
+
+    <!-- Mouse Over -->
+    <button id="btn-over">Tombol 1</button>
+    
+    <!-- Mouse Enter -->
+    <button id="btn-enter">Tombol 2</button>
+    
+    <!-- Mouse Out -->
+    <button id="btn-out">Tombol 3</button>
+
+
+    <script>
+        // constanta 
+        const btnOver = document.getElementById("btn-over");
+        const btnEnter = document.getElementById("btn-enter");
+        const btnOut = document.getElementById("btn-out");
+
+        // ADDDDDEVEENTTTLISTTENRRREEERRRR
+        btnOver.addEventListener("mouseover", function(event){
+            event.target.innerText = "MOUSE UDAH MASUKKKK";
+        });
+
+        btnEnter.addEventListener("mouseenter", function(event){
+            event.target.innerText = "MOUSE UDAH MASUKKKK";
+        });
+
+        btnOut.addEventListener("mouseout", function(event){
+            event.target.innerText = "MOUSE UDAH MASUKKKK";
+        });
+    </script>
+</body>
+</html>

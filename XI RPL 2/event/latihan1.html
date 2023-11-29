@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Membuat Event</title>
+</head>
+<body>
+    <!-- Event Klik -->
+    <button onclick="hello()" >Hello Kamu</button>
+
+    <!-- menggunakan addEventListener -->
+    <button id="tompbol" > Halo Kamu lagi </button>
+    
+    <!-- menggunakan doubleclick -->
+    <button id="double" > Click Me Twice </button>
+
+    <script>
+        // pake function
+        function hello(){
+            alert("Halo Kamu!");
+        }
+
+        // pake addEventListener
+        const button = document.getElementById("tompbol");
+        button.addEventListener("click", function(){
+            alert("Halo Bu Eka");
+        })
+
+        // double click
+        const button_double = document.getElementById("double");
+        button_double.addEventListener("dblclick", function(){
+            alert("Aku terpencet 2 kali !!!");
+        })
+    </script>
+</body>
+</html>
